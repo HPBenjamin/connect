@@ -1,0 +1,12 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <p>show all channels</p>
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        actual channel
+      </button>
+    </div>
+    <app-write-message></app-write-message>
+  </mat-drawer-container>
