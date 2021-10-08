@@ -2,11 +2,12 @@
     <mat-drawer #drawer class="example-sidenav" mode="side">
       <p>show all channels</p>
     </mat-drawer>
-  
+    
     <div class="example-sidenav-content">
       <button type="button" mat-button (click)="drawer.toggle()">
         actual channel
       </button>
     </div>
-    <app-write-message></app-write-message>
+    <div class="write-input"><app-write-message></app-write-message></div> 
   </mat-drawer-container>
+  

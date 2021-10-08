@@ -1,0 +1,23 @@
+.mat-form-field {
+    width: 100%;
+  }
+  
+  
+  .send-message {
+    position: absolute;
+    right: 10px;
+  }
+  
+  .send-message {
+    position: absolute;
+    right: -15px;
+    bottom: 28px;
+    color: rgb(96, 165, 149);
+  
+    &:hover {
+      color: rgb(136, 172, 164);
+      transform: scale(1.2);
+      transition: 130ms ease-in-out;
+    }
+  }
+  

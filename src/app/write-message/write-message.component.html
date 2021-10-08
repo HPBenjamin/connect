@@ -1,1 +1,11 @@
-<p>write-message works!</p>
+<mat-card class="comment-input">
+    <form (submit)="$event.preventDefault()">
+        <mat-form-field>
+            <mat-label>Nachrichten senden</mat-label>
+            <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize"
+                cdkAutosizeMinRows="2" cdkAutosizeMaxRows="15"></textarea>
+            <mat-icon (click)="addComment()" class="send-message" aria-hidden="false" aria-label="Example home icon">send</mat-icon>
+        </mat-form-field>
+    </form>
+</mat-card>
+
