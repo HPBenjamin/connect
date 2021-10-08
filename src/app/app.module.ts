@@ -16,13 +16,16 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { TextFieldModule } from '@angular/cdk/text-field';
 import { MatIconModule } from '@angular/material/icon';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { PostingsComponent } from './postings/postings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SidebarComponent,
-    WriteMessageComponent
+    WriteMessageComponent,
+    PostingsComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatFormFieldModule,
     MatInputModule,
     TextFieldModule,
-    MatIconModule
+    MatIconModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
