@@ -1,5 +1,12 @@
-<mat-toolbar>
-    <mat-toolbar-row>
+<div class="header">
     <div class="logo"><img src="../../assets/images/Logo.png"></div>
-</mat-toolbar-row>
-</mat-toolbar>
+    <form (submit)="$event.preventDefault()">
+        <mat-form-field>
+            <mat-label>search comment</mat-label>
+            <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize"
+                cdkAutosizeMinRows="2" cdkAutosizeMaxRows="15"></textarea>
+            <mat-icon (click)="searchComment()" class="search-comment" aria-hidden="false" aria-label="Example home icon">send</mat-icon>
+        </mat-form-field>
+    </form>
+
+</div>
